@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
-import { Grommet, Page, PageContent } from 'grommet';
 
-import { roboto_flex } from '@/fonts';
-import { theme } from '@/theme';
-import '@/styles/globals.css';
 import { HeaderNav } from '@/components';
+import { roboto_flex } from '@/fonts';
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Quad Trick Exchange',
@@ -20,21 +18,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={roboto_flex.variable}>
       <body>
-        <Grommet theme={theme} full>
-          <Page>
-            <HeaderNav>Quad Trick Exchange</HeaderNav>
+        <HeaderNav>Quad Trick Exchange</HeaderNav>
 
-            <PageContent>{children}</PageContent>
+        {children}
 
-            <p>
-              &copy;{' '}
-              <a href="https://sparkbird.works" target="_blank">
-                Sparkbird Works LLC
-              </a>
-              , 2024
-            </p>
-          </Page>
-        </Grommet>
+        <p>
+          &copy;{' '}
+          <a href="https://sparkbird.works" target="_blank">
+            Sparkbird Works LLC
+          </a>
+          , 2024
+        </p>
       </body>
     </html>
   );
