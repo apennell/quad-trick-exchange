@@ -2,6 +2,11 @@
   "name": "quad-trick-exchange",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Annie Pennell",
+    "email": "annie@sparkbird.works",
+    "url": "https://sparkbird.works"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
